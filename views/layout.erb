@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= @title %></title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<div id = "wrapper">
+		<div class = "nav_class">
+			<nav>
+				<li><a href="home">Home</a></li>
+				<li><a href="stuff">My Stuff Back</a></li>
+				<li><a href="about">About</a></li>
+				<li><a href="contacts">Contacts</a></li>
+			</nav>
+		</div>
+
+
+
+
+
+
+		<div id = "content">
+			<%= yield %>
+		</div>
+
+
+
+
+
+
+
+		<div id = "#sidebar">
+			<h2>Recent Posts</h2>
+				<li><a href="#">Transitioning</a></li>
+				<li><a href= "#">Welcome to Paybros</a></li>
+			<h2>Follow Blog Via Email</h2>
+				<input type="text" name = "email" placeholder = "Enter your email" value id ="subscribe-field">
+				<input type="submit" name = "sub" >Follow</input>
+			<h2>Archives</h2>
+				Enter your email address to follow the blog and receives notifications of new posts by email
+				<li><a href="#">November 2015</a></li>
+				<li><a href="#">December 2015</a></li>
+		</div>
+
+		<div class = "#footer">
+			<div class = "cols">
+			</div>
+		</div>
+		<div clas = "#footer_bottom">
+			<hr>All of this is copyright, infringement will be prosecuted to the fullest extent of the law</hr>
+		</div>
+	</div>
+</body>
+</html>
