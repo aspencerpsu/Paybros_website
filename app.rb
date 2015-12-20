@@ -1,8 +1,25 @@
 require 'sinatra'
 
 get '/'  do
+	@home = "Home"
 	erb :home
 end
+
+get '/' do
+	@home = "Home"
+	erb :index
+end
+
+get '/contacts' do
+	@title = "contacts"
+	erb :contacts
+end
+
+get '/about' do
+	@title = "about"
+	erb :about
+end
+
 
 get '/contacts' do
 	@@text = ["Welcome to NYCDA!","number: 845-598-6387", "address: 90 John st new york new york"]
