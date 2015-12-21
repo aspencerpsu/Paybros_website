@@ -5,9 +5,9 @@ get '/'  do
 	erb :home
 end
 
-get '/' do
+get '/home' do
 	@home = "Home"
-	erb :index
+	erb :home
 end
 
 get '/contacts' do
